@@ -6,8 +6,8 @@ import { Container } from './styles'
 function LandingPage() {
   return (
     <Container>
-      <Button text='Cadastrar-se' />
       <Burger />
+      <Button text='Cadastrar-se' />
     </Container>
   )
 }
