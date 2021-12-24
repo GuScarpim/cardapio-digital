@@ -27,7 +27,7 @@ const theme = {
     xxmedium: '22px',
     large: '24px',
     xlarge: '36px',
-    xxlarge: '48px',
+    xxlarge: '42px',
     xxxlarge: '64px',
     imensively: '100px',
     ximensively: '130px',
