@@ -5,9 +5,9 @@ import { Container } from './styles'
 function Home() {
   return (
     <Container>
-      <Title title="Nome do lanche em destaque" />
+      <Title title='Nome do lanche em destaque' />
     </Container>
-  )
+  );
 }
 
 export default Home
