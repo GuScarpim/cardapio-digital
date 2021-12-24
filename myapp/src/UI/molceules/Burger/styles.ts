@@ -11,6 +11,7 @@ export const ContainerBurger = styled.div<INav>`
   z-index: ${({ theme }) => theme.zIndex.drawer};
   cursor: pointer;
   display: none;
+  z-index: 9999;
 
   @media (max-width: 768px) {
     display: flex;
@@ -40,4 +41,12 @@ export const LineBurger = styled.div<INav>`
       margin-top: ${({ open, theme }) => open && theme.size.xnano};
       transform: ${({ open }) => open ? 'rotate(-48deg)' : 'rotate(0)'};
     }
+`
+
+export const Shadow = styled.div<INav>`
+  display: ${({ open }) => !open && 'none'};
+  background: ${({ theme }) => theme.color.gray.shadow};
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 `
