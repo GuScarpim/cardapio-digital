@@ -11,7 +11,8 @@ const theme = {
     gray: {
       default: '#C4C4C4',
       dark: '#666666',
-      darker: '#868A94'
+      darker: '#868A94',
+      shadow: '#00000040'
     },
     black: '#333333'
   },
@@ -22,9 +23,17 @@ const theme = {
     xsmall: '12px',
     small: '14px',
     medium: '16px',
+    xmedium: '18px',
+    xxmedium: '22px',
     large: '24px',
     xlarge: '36px',
-    xxlarge: '48px'
+    xxlarge: '42px',
+    xxxlarge: '64px',
+    imensively: '100px',
+    ximensively: '130px',
+    xximensively: '150px',
+    xxximensively: '200px',
+    maximensively: '250px'
   },
   weight: {
     light: 300,
@@ -62,7 +71,10 @@ const theme = {
     normal: '12px',
     xxxsmall: '16px',
     xxsmall: '24px',
-    xsmall: '32px'
+    xsmall: '32px',
+    xlarge: '52px',
+    xxlarge: '64px',
+    xxxlarge: '100px',
   },
   zIndex: {
     dropdown: "1000",
