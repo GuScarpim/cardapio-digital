@@ -1,5 +1,5 @@
-import Button from '../UI/atoms/Button'
 import Burger from '../UI/molceules/Burger'
+import Home from '../UI/organisms/Home';
 
 import { Container } from './styles'
 
@@ -7,9 +7,10 @@ function LandingPage() {
   return (
     <Container>
       <Burger />
-      <Button text='Cadastrar-se' />
+      <Home />
+      {/* <Button text='Cadastrar-se' /> */}
     </Container>
-  )
+  );
 }
 
 export default LandingPage

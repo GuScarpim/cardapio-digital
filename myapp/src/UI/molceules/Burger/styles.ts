@@ -21,26 +21,26 @@ export const ContainerBurger = styled.div<INav>`
 `
 
 export const LineBurger = styled.div<INav>`
-    width: ${({ theme }) => theme.size.xlarge};
-    height: ${({ theme }) => theme.size.nano};
-    margin-bottom: ${({ theme }) => theme.spacing.quark};
-    background-color: ${({ open }) => open ? '#000' : '#000'};
-    border-radius: ${({ theme }) => theme.border.radius.large};
-    transform-origin: 1px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  width: ${({ theme }) => theme.size.xlarge};
+  height: ${({ theme }) => theme.size.nano};
+  margin-bottom: ${({ theme }) => theme.spacing.quark};
+  background-color: ${({ open }) => open ? '#000' : '#000'};
+  border-radius: ${({ theme }) => theme.border.radius.large};
+  transform-origin: 1px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
-    &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(48deg)' : 'rotate(0)'};
-    }
-    &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
-    }
-    &:nth-child(3) {
-      margin-top: ${({ open, theme }) => open && theme.size.xnano};
-      transform: ${({ open }) => open ? 'rotate(-48deg)' : 'rotate(0)'};
-    }
+  &:nth-child(1) {
+    transform: ${({ open }) => open ? 'rotate(48deg)' : 'rotate(0)'};
+  }
+  &:nth-child(2) {
+    transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+    opacity: ${({ open }) => open ? 0 : 1};
+  }
+  &:nth-child(3) {
+    margin-top: ${({ open, theme }) => open && theme.size.xnano};
+    transform: ${({ open }) => open ? 'rotate(-48deg)' : 'rotate(0)'};
+  }
 `
 
 export const Shadow = styled.div<INav>`
