@@ -1,11 +1,17 @@
-import { MySubTitle } from './styles'
+import { MySubTitle } from './styles';
 
 type ISubTitle = {
-  subTitle?: string
+  subTitle?: string;
+  margin?: string;
+  padding?: string;
 };
 
-function SubTitle({ subTitle }: ISubTitle) {
-  return <MySubTitle>{subTitle}</MySubTitle>;
+function SubTitle({ subTitle, margin, padding }: ISubTitle) {
+  return (
+    <MySubTitle margin={margin} padding={padding}>
+      {subTitle}
+    </MySubTitle>
+  );
 }
 
-export default SubTitle
+export default SubTitle;

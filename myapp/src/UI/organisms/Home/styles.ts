@@ -1,23 +1,37 @@
 import styled from 'styled-components'
 
-import Background from '../../../Assets/home/home-bg.jpg'
-
 export const Container = styled.div`
-  background-image: url(${Background});
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   height: 600px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Card = styled.div`
-
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 
-export const GridText = styled.div`
-
+export const ContentText = styled.div`
+  max-width: 60%;
 `
 
-export const GridImg = styled.div`
+export const ContentImg = styled.div`
+`
 
+export const Img = styled.img`
+  width: 500px;
+  animation: 'Move' 3s linear infinite;
+
+  @keyframes Move {
+    0%, 100% {
+      transform: translateY(0rem);
+    }
+
+    50% {
+      transform: translateY(3rem);
+    }
+  }
 `

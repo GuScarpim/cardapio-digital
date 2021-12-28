@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 interface IMedium {
   medium: boolean;
   fontSize: string;
+  margin: string;
 }
 
 const ButtonMedium = css`
@@ -28,6 +29,7 @@ export const CustomButton = styled.button`
   border: 1px solid ${({ theme }) => theme.color.primary.default};
   background-color: ${({ theme }) => theme.color.white};
   border-radius: ${({ theme }) => theme.border.radius.small};
+  margin: ${({ margin }) => margin};
 
   ${({ medium }: IMedium) => medium && ButtonMedium};
 

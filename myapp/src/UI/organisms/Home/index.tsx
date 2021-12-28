@@ -1,21 +1,30 @@
 import Title from '../../molecules/Titles'
 import SubTitle from '../../molecules/SubTitles'
 
-import Button from '@atoms/Button'
+import Button from '../../atoms/Button';
 
-import { Container, Card, GridText, GridImg } from './styles';
+import Hamburger from '../../../Assets/home/home-burger.png'
+
+import {
+  Container,
+  Card,
+  ContentText,
+  ContentImg,
+  Img
+} from './styles'
 
 function Home() {
   return (
     <Container>
       <Card>
-        <GridText>
+        <ContentText>
           <Title title='Nome do lanche em destaque' />
           <SubTitle subTitle='Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Voluptas Accusamus Tempore Temporibus Rem Amet Laudantium Animi Optio Voluptatum. Natus Obcaecati Unde Porro Nostrum Ipsam Itaque Impedit Incidunt Rem Quisquam Eos!' />
-          <Button text='Adicionar' />
-        </GridText>
-        <GridImg>
-        </GridImg>
+          <Button margin='30px 0px' text='Adicionar' />
+        </ContentText>
+        <ContentImg>
+          <Img src={Hamburger} alt='Hamburger' />
+        </ContentImg>
       </Card>
     </Container>
   );
