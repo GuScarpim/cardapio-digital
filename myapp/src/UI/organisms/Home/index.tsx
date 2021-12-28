@@ -1,9 +1,9 @@
-import Title from '../../molecules/Titles'
-import SubTitle from '../../molecules/SubTitles'
+import Title from 'src/UI/atoms/Titles';
+import SubTitle from 'src/UI/atoms/SubTitles'
 
-import Button from '../../atoms/Button';
+import Button from 'src/UI/atoms/Button';
 
-import Hamburger from '../../../Assets/home/home-burger.png'
+import Hamburger from 'src/Assets/home/home-burger.png'
 
 import {
   Container,
