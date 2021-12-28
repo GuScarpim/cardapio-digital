@@ -6,6 +6,18 @@ export const Container = styled.div`
   background-image: url(${Background});
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 100vw;
   height: 600px;
+  display: flex;
+`
+
+export const Card = styled.div`
+
+`
+
+export const GridText = styled.div`
+
+`
+
+export const GridImg = styled.div`
+
 `

@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
+    "paths": {
+      "@Assets/*": ["./src/Assets/*"],
+      "@Pages/*": ["./src/Pages/*"],
+      "@Templates/*": ["./src/Templates/*"],
+      "@atoms/*": ["./src/UI/atoms/*"],
+      "@molecules/*": ["./src/UI/molecules/*"],
+      "@organisms/*": ["./src/UI/organisms*"],
+      "@UI/*": ["./src/UI/*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
