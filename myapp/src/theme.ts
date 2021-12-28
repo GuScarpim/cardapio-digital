@@ -72,6 +72,7 @@ const theme = {
     xxxsmall: '16px',
     xxsmall: '24px',
     xsmall: '32px',
+    large: '40px',
     xlarge: '52px',
     xxlarge: '64px',
     xxxlarge: '100px',
