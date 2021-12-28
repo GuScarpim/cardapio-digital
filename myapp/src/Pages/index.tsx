@@ -1,4 +1,4 @@
-import Burger from '../UI/molceules/Burger'
+import Burger from '../UI/molecules/Burger'
 import Home from '../UI/organisms/Home';
 
 import { Container } from './styles'
