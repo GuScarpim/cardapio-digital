@@ -2,6 +2,7 @@ import Title from 'src/UI/atoms/Titles'
 
 import InputSearch from 'src/UI/atoms/InputSearch'
 import InputFilter from 'src/UI/atoms/InputFilter';
+import Product from 'src/UI/molecules/Product';
 
 import { options } from './menu'
 
@@ -16,6 +17,7 @@ function Menu() {
         <InputSearch placeholder='Pesquisar por...' />
         <InputFilter placeholder='Filtrar por...' options={options} />
       </Content>
+      <Product />
     </Container>
   );
 }
