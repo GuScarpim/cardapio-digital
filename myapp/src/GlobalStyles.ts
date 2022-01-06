@@ -17,18 +17,32 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     background-image: url(${Background});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     min-height: 100vh;
     height: 100%;
   }
 
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
+  @keyframes Move {
+    0%, 100% {
+      transform: translateY(0rem);
     }
-    to {
-      transform: rotate(360deg);
+
+    50% {
+      transform: translateY(3rem);
+    }
+  }
+
+  @keyframes Show {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: .5;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
 `

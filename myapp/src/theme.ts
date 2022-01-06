@@ -8,6 +8,7 @@ const theme = {
       secondary: '#FFD700',
     },
     white: '#FFFFFF',
+    green: '#268149',
     gray: {
       default: '#C4C4C4',
       dark: '#666666',
@@ -39,7 +40,7 @@ const theme = {
     light: 300,
     regular: 400,
     semiBold: 500,
-    bold: 700,
+    bold: 600,
     black: 900
   },
   lineHeight: {
@@ -72,6 +73,7 @@ const theme = {
     xxxsmall: '16px',
     xxsmall: '24px',
     xsmall: '32px',
+    large: '40px',
     xlarge: '52px',
     xxlarge: '64px',
     xxxlarge: '100px',
