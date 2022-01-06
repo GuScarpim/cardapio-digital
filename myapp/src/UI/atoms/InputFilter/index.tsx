@@ -1,20 +1,18 @@
-import { InputCustom } from './styles';
+import { InputCustom, Option } from './styles';
 
 interface IInput {
   placeholder?: string;
   onChange?: () => void;
-  value?: string;
+  options?: any;
 }
 
-function Input({ placeholder, onChange, value }: IInput) {
+export default function InputFilter({ placeholder, onChange, options }: IInput) {
   return (
-    <InputCustom
-      type='search'
-      placeholder={placeholder}
-      onChange={onChange}
-      value={value}
-    />
+    <InputCustom onChange={onChange}>
+      <Option value=''>{placeholder}</Option>
+      {options.map((option: any) => (
+        <Option value={option.value}>{option.value}</Option>
+      ))}
+    </InputCustom>
   );
 }
-
-export default Input;

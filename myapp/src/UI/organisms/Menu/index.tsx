@@ -1,6 +1,9 @@
 import Title from 'src/UI/atoms/Titles'
 
 import InputSearch from 'src/UI/atoms/InputSearch'
+import InputFilter from 'src/UI/atoms/InputFilter';
+
+import { options } from './menu'
 
 import { Container, Content} from './styles'
 
@@ -11,6 +14,7 @@ function Menu() {
 
       <Content>
         <InputSearch placeholder='Pesquisar por...' />
+        <InputFilter placeholder='Filtrar por...' options={options} />
       </Content>
     </Container>
   );

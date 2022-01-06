@@ -10,6 +10,8 @@ export const InputCustom = styled.input`
   outline: none;
   border: 1px solid ${({ theme }) => theme.color.gray.dark};
   border-radius: ${({ theme }) => theme.border.radius.small};
+  width: ${({ theme }) => theme.size.xxximensively};
+  background: ${({ theme }) => theme.color.white};
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   padding-left: ${({ theme }) => theme.spacing.nano};

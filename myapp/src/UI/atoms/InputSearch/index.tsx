@@ -8,7 +8,7 @@ interface IInput {
   value?: string;
 }
 
-export default function Input({ placeholder, onChange, value }: IInput) {
+export default function InputSearch({ placeholder, onChange, value }: IInput) {
   return (
     <Container>
       <Content>
