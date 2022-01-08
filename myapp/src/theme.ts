@@ -54,6 +54,7 @@ const theme = {
       large: '10px',
       medium: '8px',
       small: '6px',
+      nano: '3px',
       circle: '50%',
       pill: '200px'
     }
